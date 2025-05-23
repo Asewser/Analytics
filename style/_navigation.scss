@@ -1,0 +1,42 @@
+.desktop-navigation{
+    padding: 41px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.desktop-navigation__list{
+    display: flex;
+    gap: 36px;
+    a{
+        font-size: 16px;
+    }
+}
+.desktop-navigation__buttons{
+    margin-left: 230px;
+    @media (max-width: $breakpoint-xl) {
+        margin-left: 100px;
+    }
+    align-items: center;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    a{
+        font-size: 16px;
+    }
+    .button{
+        width: 161px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid $gray;
+        color: $gray;
+    }
+}
+.desktop-navigation__buttons-img{
+    margin-top: 8px;
+    display: inline-block;
+}
+.header{
+    padding: 9px 0 8px;
+    background-color: $dark-blue;
+}

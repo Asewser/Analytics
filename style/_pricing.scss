@@ -1,0 +1,127 @@
+.pricing{
+    background-color: $dark-blue;
+}
+.pricing__plans{
+    h1{
+        font-size: 40px;
+    }
+    p{
+        margin: 35px auto 0;
+    }
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 45px auto 0;
+}
+.pricing__text{
+    width: 640px;
+}
+.backgroud__bootom{
+    margin-top: 113px;
+}
+.backgroud__bootom_pink{
+	width: 0;
+	height: 0;
+	border-top: 13.19vw solid $background-color;
+	border-right: 100vw solid $pink;
+    z-index: -2;
+
+}
+.backgroud__bootom_pink_mini{
+    width: auto;
+	height: 17px;
+    background: $pink;
+    z-index: -2;
+}
+.backgroud__bootom_black{
+    margin-top: -13.13vw;
+    width: 0;
+	height: 0;
+	border-top: 13.19vw solid transparent; 
+	border-right: 100vw solid $dark-blue;
+    z-index: -1;	
+
+}
+.pricing__species{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing__block{
+    height: 440px;
+    width: 340px;
+    background: $dark-blue-opasiti;
+    border-radius: 30px;
+    text-align: center;
+    transition: 400ms;
+    h1{
+        margin: 52px auto 0;
+        color: $white;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing:normal;
+        transition: 400ms;
+    }
+    h2{
+        margin: 39px auto 0;
+        color: $white;
+        font-size: 60px;
+        line-height: 80%;
+        transition: 400ms;
+    }
+    p{
+        margin: 12px auto 0;
+    }
+    .button{
+        font-size: 16px;
+        color: $white;
+        background-color: transparent;
+        border: 1px solid $blue;
+        width: 200px;
+        margin: 40px auto 0;
+        font-weight: 400;
+        transition: 400ms;
+    }
+    h3{
+        top: px;
+    }
+    @media (max-width: $breakpoint-xl) {
+        transform: scale(0.9);
+    }
+}
+.pricing__block:hover{
+    background: $white;
+    box-shadow: 0 18px 50px -18px rgba(6, 15, 40, 1);
+    
+    transition: 400ms;
+    h1{
+        color: $dark-blue;
+        transition: 400ms;
+    }
+    h2{
+        color: $dark-blue;
+        transition: 400ms;
+  
+    }
+    .button{
+        background-color: $pink;
+        border: 0px;
+        transition: 400ms;
+    }
+    .button:hover{
+        width: 206px;
+        transition: 400ms;
+    }
+    .pricing__line{
+        background: #D3D9E9;
+        transition: 200ms;
+    }
+}
+.pricing__line{
+    height: 1px;
+    width: 220px;
+    background: $blue;
+    margin: 37px auto 0;
+    transition: 400ms;
+
+}

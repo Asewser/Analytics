@@ -1,0 +1,36 @@
+.footer{
+    padding: 99px 0 103px;
+    background-color: $dark-blue;
+}
+.footer__line{
+    width: 1180x;
+    height: 1px;
+    background: $blue;
+}
+.footer_content{
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $breakpoint-xl) {
+        transform: scale(0.90);
+    }
+
+}
+.footer__menu{
+    display: flex;
+    gap: 37px;
+
+}
+.footer__menu{
+    a{
+        font-size: 14px;
+    }
+}
+.footer__social{
+    display: flex;
+    gap: 40px;
+    li{
+        height: 20px;
+    }
+}
