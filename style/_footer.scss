@@ -20,7 +20,10 @@
 .footer__menu{
     display: flex;
     gap: 37px;
-
+    @media (max-width: $breakpoint-md) {
+        display: none;
+        width: 100%;
+    }
 }
 .footer__menu{
     a{

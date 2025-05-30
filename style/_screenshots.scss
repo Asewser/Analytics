@@ -50,6 +50,17 @@
     h2{
         margin-bottom: 30px;
         line-height: 120%;
+        @media (max-width: $breakpoint-sm) {
+            line-height: 100%;
+        }
+    }
+    p{
+        @media (max-width: $breakpoint-sm) {
+            font-size: 14px;
+        }  
+    }
+    @media (max-width: $breakpoint-sm) {
+        width: 89vw;
     }
 }
 .screenshots__icon{
@@ -62,6 +73,10 @@
         width: 480px;
         height: 328px;
     }
+    @media (max-width: $breakpoint-sm) {
+        width: 89vw;
+        height: 61vw;
+    }
 }
 .screenshots__icon-chart{
     margin-top: 51px;
@@ -70,18 +85,31 @@
         transform: scale(0.8);
         margin-top: 10px;
         margin-left: 3px;
-    }
 
+    }
+    @media (max-width: $breakpoint-sm) {
+        transform: scale(1);
+        width: 69vw;
+        height: 46vw;
+        margin-top: 7vw;
+        margin-left: 9.5vw;
+    }
 }
 .screenshots__icon-group{
     margin-top: 72px;
     margin-left: 57px;
     @media (max-width: $breakpoint-xl) {
         transform: scale(0.8);
-            margin-top: 31px;
-            margin-left: -4px;
+        margin-top: 31px;
+        margin-left: -4px;
     }
-
+    @media (max-width: $breakpoint-sm) {
+        transform: scale(1);
+        width: 72vw;
+        height: 40vw;
+        margin-top: 10.7vw;
+        margin-left: 8.4vw;
+    }
 }
 .screenshots__icon-calendar{
     margin-top: 57px;
@@ -91,5 +119,11 @@
         margin-top: 15px;
         margin-left: 8px;
     }
-
+    @media (max-width: $breakpoint-sm) {
+        transform: scale(1);
+        width: 69vw;
+        height: 45vw;
+        margin-top: 8.4vw;
+        margin-left: 10.4vw;
+    }
 }

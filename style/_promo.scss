@@ -1,5 +1,5 @@
 .promo{
-    padding-top: 7px;
+    padding-top: 65px;
     background-color: $dark-blue;
     position: relative;
     z-index: -1;
@@ -26,6 +26,11 @@
     h1{
         margin-bottom: 15px;
     }
+    @media (max-width: $breakpoint-sm) {
+        width: 100%;
+        min-width: 0px;
+        margin-top: 26px;
+    }
 }
 .container__promo{
     width: 1380px;
@@ -40,6 +45,9 @@ h1{
     height: 13.2vw;
     @media (max-width: $breakpoint-md) {
     margin-top: -17px;
+    }
+    @media (max-width: $breakpoint-sm) {
+    margin-top: 37px;
     }
 
 }
@@ -84,6 +92,11 @@ h1{
         transform: scale(1.5);
         margin-top: 55px;
     }
+    @media (max-width: $breakpoint-sm) {
+        transform: scale(1);
+        justify-content: left;
+        margin-top: 28px;
+    }
 }
 .promo__rectangle{
     width: 804px;
@@ -97,7 +110,11 @@ h1{
         height: 231.06991577148438px;
         margin-left: 0;
     }
-
+    @media (max-width: $breakpoint-sm) {
+        width: 89vw;
+        height: 61vw;
+        border-radius: 12.5px;
+    }
 }
 .promo__rectangle_mini{
     width: 361px;
@@ -119,6 +136,13 @@ h1{
         height: 211.35121154785156px;
         margin-top: 10.48px;
         margin-left: 13.48px;
+    }
+    @media (max-width: $breakpoint-sm) {
+        width: 82vw;
+        height: 56vw;
+        margin-top: 2.79vw;
+        margin-left: 3.59vw;
+
     }
 }
 .promo__img-chart{

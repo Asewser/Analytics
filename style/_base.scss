@@ -19,6 +19,9 @@ body {
     color: $gray;
     background-color: $background-color;
 }
+.menu-opened{
+    overflow: hidden;
+}
 .container{
     max-width: 1180px;
     @media (max-width: $breakpoint-xl) {
@@ -29,6 +32,9 @@ body {
     }
     @media (max-width: $breakpoint-md) {
         max-width: $container-sm;
+    }
+    @media (max-width: $breakpoint-sm) {
+        max-width: 89vw;
     }
 
     margin: 0 auto;
@@ -47,6 +53,9 @@ h1{
     font-size: 50px;
     font-weight: 700;
     line-height: 120%;
+    @media (max-width: $breakpoint-sm) {
+        font-size: 31px;
+    }
 }
 h2{
     font-weight: 700;
@@ -54,6 +63,9 @@ h2{
     line-height: 100%;
     color: $dark-blue;
     span{
+        font-size: 30px;
+    }
+    @media (max-width: $breakpoint-sm) {
         font-size: 30px;
     }
 }
@@ -69,5 +81,8 @@ h3{
     width: 238px;
     height: 50px;
     border-radius: 68px;
+    @media (max-width: $breakpoint-sm) {
+        width: 100%;
+    }
 }
 

@@ -4,9 +4,19 @@
 .pricing__plans{
     h1{
         font-size: 40px;
+            @media (max-width: $breakpoint-sm) {
+                font-size: 30px;
+                line-height: 100%;
+            }
     }
     p{
         margin: 35px auto 0;
+            @media (max-width: $breakpoint-sm) {
+                font-size: 14px;
+            }
+    }
+    @media (max-width: $breakpoint-sm) {
+        text-align: left;
     }
     display: flex;
     text-align: center;
@@ -46,6 +56,13 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $breakpoint-md) {
+        display: inline-flex;
+        justify-content: center;
+        gap: 20px;
+        display: grid;;
+    }
+
 }
 .pricing__block{
     height: 440px;
@@ -61,6 +78,10 @@
         line-height: 100%;
         letter-spacing:normal;
         transition: 400ms;
+        @media (max-width: $breakpoint-md) {
+            color: $dark-blue;
+            font-size: 25px;
+        }
     }
     h2{
         margin: 39px auto 0;
@@ -68,9 +89,17 @@
         font-size: 60px;
         line-height: 80%;
         transition: 400ms;
+        @media (max-width: $breakpoint-md) {
+            margin: 20px auto 0;
+            color: $dark-blue;
+        }
     }
     p{
         margin: 12px auto 0;
+        @media (max-width: $breakpoint-md) {
+            margin: 7px auto 0;
+            font-size: 13px;
+        }
     }
     .button{
         font-size: 16px;
@@ -81,12 +110,27 @@
         margin: 40px auto 0;
         font-weight: 400;
         transition: 400ms;
+        @media (max-width: $breakpoint-md) {
+            margin: 36px auto 0;
+            background-color: $pink;
+            border: 0px;
+        }
     }
     h3{
         top: px;
+        @media (max-width: $breakpoint-md) {
+            font-size: 13px;
+        }
     }
     @media (max-width: $breakpoint-xl) {
         transform: scale(0.9);
+    }
+    @media (max-width: $breakpoint-md) {
+        transform: scale(1);
+        height: 358px;
+        width: 280px;
+        background: $white;
+        box-shadow: 0 18px 50px -18px rgba(6, 15, 40, 1);
     }
 }
 .pricing__block:hover{
@@ -123,5 +167,8 @@
     background: $blue;
     margin: 37px auto 0;
     transition: 400ms;
-
+    @media (max-width: $breakpoint-sm) {
+    margin: 30px auto 0;
+    background: #D3D9E9;
+    }
 }

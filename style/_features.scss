@@ -2,10 +2,20 @@
     padding: 58px 0 10px;
     h2{
         text-align: center;
+        @media (max-width: $breakpoint-sm) {
+            text-align: left;
+        }
     }
     p{
         padding-top: 40px;
         text-align: center;
+        @media (max-width: $breakpoint-sm) {
+            font-size: 14px;
+            text-align: left;
+        }
+        @media (max-width: $breakpoint-sm) {
+            padding-top: 20px;
+        }
     }
 }
 .features__cards{
@@ -29,7 +39,9 @@
         gap: 30px;
         width: 500px;
     }
-
+    @media (max-width: $breakpoint-lg) {
+       width: 100%; 
+    }
     h2{
         margin: 20px auto 15px;
         font-size: 16px;
@@ -47,15 +59,16 @@
     h2{
         @media (max-width: $breakpoint-lg) {
                     text-align: start;
-
         }   
-
     }
     p{
         @media (max-width: $breakpoint-lg) {
                     text-align: start;
 
-        }   
+        }
+        @media (max-width: $breakpoint-sm) {
+            font-size: 14px;
+        }
     }
 
 }

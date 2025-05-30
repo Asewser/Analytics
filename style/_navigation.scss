@@ -4,15 +4,18 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    @media (max-width: $breakpoint-lg) {
+        display: none;
+    }
 }
-.desktop-navigation__list{
+.navigation__list{
     display: flex;
     gap: 36px;
     a{
         font-size: 16px;
     }
 }
-.desktop-navigation__buttons{
+.navigation__buttons{
     margin-left: 230px;
     @media (max-width: $breakpoint-xl) {
         margin-left: 100px;
@@ -39,4 +42,7 @@
 .header{
     padding: 9px 0 8px;
     background-color: $dark-blue;
+    @media (max-width: $breakpoint-md) {
+        padding: 0;
+    }
 }
